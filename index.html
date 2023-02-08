@@ -15,9 +15,71 @@
       <h1>Picture This!</h1>
       <h4>My Really Cool Blog Post</h4>
     </div>
-    <img src="images/museum.jpg" alt="placeholder">
+    <!-- <img srcset="img/sizes/museum-320-landscape.jpg 320w,
+                img/sizes/museum-640-landscape.jpg 640w,
+                img/sizes/museum-960-landscape.jpg 960w"
+                src="img/sizes/museum-640-landscape.jpg" alt="museum"> -->
 
-  </header>
+    <!-- <img srcset="img/sizes/museum-960-square.jpg 960w,
+                img/sizes/museum-1280-square.jpg 1280w,
+                img/sizes/museum-1600-square.jpg 1600w"
+                src="img/sizes/museum-1280-square.jpg" alt="museum"> -->
+
+                
+                <picture >
+                  <source srcset = "img/sizes/museum-960-landscape.jpg,
+                                    img/sizes/museum-960-landscape.jpg 1x,
+                                    img/sizes/museum-1920-landscape.jpg 2x,
+                                    img/sizes/museum-2880-landscape.jpg 3x"
+                          media = "(min-width: 960px)" />
+                
+                  <source srcset = "img/sizes/museum-720-landscape.jpg,
+                                    img/sizes/museum-720-landscape.jpg 1x,
+                                    img/sizes/museum-1440-landscape.jpg 2x,
+                                    img/sizes/museum-2160-landscape.jpg 3x"
+                          media = "(min-width: 720px)" />
+                
+                  <source srcset = "img/sizes/museum-480-landscape.jpg,
+                                    img/sizes/museum-480-landscape.jpg 1x,
+                                    img/sizes/museum-960-landscape.jpg 2x,
+                                    img/sizes/museum-1440-landscape.jpg 3x"
+                          media = "(min-width: 480px)" />
+                
+                  <source srcset = "img/sizes/museum-320-landscape.jpg,
+                                    img/sizes/museum-320-landscape.jpg 1x,
+                                    img/sizes/museum-640-landscape.jpg 2x,
+                                    img/sizes/museum-960-landscape.jpg 3x"
+                          media = "(max-width: 320px)" />
+                          
+                          <source srcset = "img/sizes/museum-960-square.jpg,
+                          img/sizes/museum-480-square.jpg 1x,
+                          img/sizes/museum-960-square.jpg 2x,
+                          img/sizes/museum-1440-square.jpg 3x"
+                media = "(min-width: 960px)"/>
+
+        <source srcset = "img/sizes/museum-1280-square.jpg,
+                          img/sizes/museum-640-square.jpg 1x,
+                          img/sizes/museum-1280-square.jpg 2x,
+                          img/sizes/museum-1920-square.jpg 3x"
+                media = "(min-width: 1280px)"/>
+
+        <source srcset = "img/sizes/museum-1600-square.jpg,
+                          img/sizes/museum-800-square.jpg 1x,
+                          img/sizes/museum-1600-square.jpg 2x,
+                          img/sizes/museum-2400-square.jpg 3x"
+                media = "(max-width: 1600px)"/>
+                  <img class = "orig-img"
+                       src = "img/sizes/museum-960-landscape.jpg"
+                       alt = "museum"/>
+                </picture >
+
+
+                <picture>
+                  
+                  <img class = "orig-img"
+                       src = "img/sizes/museum-960-square.jpg"
+                       alt = "museum">
+                </picture >
 </body>
 
 </html>
